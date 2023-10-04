@@ -10,6 +10,7 @@ import { InicioComponent } from './inicio/inicio.component';
 import { JugadoresComponent } from './jugadores/jugadores.component';
 import { PartidosComponent } from './partidos/partidos.component';
 import { PerfilComponent } from './perfil/perfil.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { PerfilComponent } from './perfil/perfil.component';
     InicioComponent,
     JugadoresComponent,
     PartidosComponent,
-    PerfilComponent
+    PerfilComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

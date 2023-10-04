@@ -1,0 +1,48 @@
+footer {
+    width: 100%;
+    margin-bottom: 0;
+    padding: 3rem 2rem 1rem 2rem;
+    background-color: #2A2A2A;
+    color: white;
+}
+
+#pie {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 3rem;
+}
+
+#pie div {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#pie div span:first-child {
+    color: orange;
+    font-size: large;
+    padding-bottom: 1rem;
+}
+
+#pie div span:last-child {
+    padding-top: 0.5rem;
+}
+
+h6 {
+    text-align: center;
+    border-top: 1px solid white;
+    padding-top: 1rem;
+    font-size: small;
+}
+
+
+@media (max-width: 800px){
+
+    #pie {
+        display: flex;
+        flex-direction: column;
+        align-items: first baseline;
+        gap: 2rem;
+    }
+}
