@@ -16,7 +16,7 @@ h2 {
     max-width: 1024px;
     font-size: larger;
     margin: 2rem;
-    color: #10a189;
+    color: rgb(0, 133, 167);
 }
 
 
@@ -29,8 +29,8 @@ article {
     background-color: #d7fffa;
     border-radius: 5px;
     font-size: large;
-    opacity: 0.8;
-    color: black;
+    opacity: 0.9;
+    color: rgb(0, 88, 110);
     border: 3px solid #29f7d4;
 }
 

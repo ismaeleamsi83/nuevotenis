@@ -1,0 +1,27 @@
+#fondo-tabla {
+    display: flex;
+    justify-content: center;
+    margin-top: 6rem;
+}
+
+#fondo {
+    background-color: aliceblue;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+table {
+    background-color: aliceblue;
+}
+
+table tr th {
+    padding: 1rem 0.5rem;
+}
+
+table tr td {
+    padding: 0.5rem 0.5rem;
+}
+
+table tr:nth-child(even){
+    background-color:rgb(240, 239, 238);
+}
