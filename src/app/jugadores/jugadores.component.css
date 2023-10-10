@@ -5,13 +5,25 @@
 }
 
 #fondo {
-    background-color: aliceblue;
-    padding: 2rem;
     border-radius: 1rem;
+    background-color: azure;
+    box-shadow: 0 0 3px gray;
+    font-family: Sans-serif;
 }
 
+h2 {
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+ 
 table {
-    background-color: aliceblue;
+    background-color: rgb(105, 141, 172);
+    margin: 1rem;
+}
+
+table tr {
+    border-radius: 1rem 1rem 0 0;
+    border: 1px solid black;
 }
 
 table tr th {
@@ -23,5 +35,14 @@ table tr td {
 }
 
 table tr:nth-child(even){
-    background-color:rgb(240, 239, 238);
+    background-color: rgb(238, 249, 255);
+}
+
+table tr:nth-child(odd){
+    background-color: rgb(219, 241, 255);
+}
+
+
+.seleccionado {
+    cursor: pointer;
 }

@@ -36,6 +36,11 @@ h6 {
     font-size: small;
 }
 
+.redes:hover {
+    color: orange;
+    cursor: pointer;
+}
+
 
 @media (max-width: 800px){
 
