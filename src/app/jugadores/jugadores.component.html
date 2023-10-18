@@ -14,7 +14,7 @@
                     <th>Partidos Perdidos</th>
                 </tr>
                 <tr *ngFor="let jugador of jugadores">
-                    <td class="seleccionado">
+                    <td #asNombre class="seleccionado" data-toggle="modal" data-target="#exampleModalCenter">
                         {{jugador.nombre}}
                     </td>
                     <td>
@@ -44,3 +44,55 @@
         </div>
 </div>
 
+
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div id="detalle-jug" class="modal-header">
+          <h1 class="modal-title" id="exampleModalCenterTitle">Detalles del Jugador</h1>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body margenarriba" id="detallejugador" #asDetalle>
+          <div class="foto-detalle">
+            <img src="assets/images/foto-carnet.PNG" alt="">
+            <div>
+              <p class="nombre-detalle" #mostrarNom></p>
+              <img src="assets/images/bandera-espa.PNG" alt="">
+            </div>
+            <div>
+              <p class="nivel-detalle">Nivel</p>
+              <img src="assets/images/nivel-jugador.png" alt="">
+            </div>
+          </div>
+          <div class="foto-detalle mt-5">
+            <div class="part juga">
+              <p>Partidos Jugados</p>
+              <p>10</p>
+            </div>
+            <div class="part ganad"> 
+              <p>Partidos Ganados</p>
+              <p>8</p>
+            </div>
+            <div class="part perd">
+              <p>Partidos Perdidos</p>
+              <p>2</p>
+            </div>
+          </div>
+          <div class="foto-detalle mt-4">
+            <div class="part">
+              <h2>Descripcion</h2>
+              <p>Carlos Alcaraz es un talentoso jugador de tenis español. Nacido el 5 de mayo de 2003 en El Palmar, España, es conocido por su estilo de juego agresivo y su rápido ascenso en el mundo del tenis. A una edad temprana, Alcaraz ha demostrado una gran destreza en la cancha con un poderoso saque, golpes de fondo sólidos y una gran movilidad. Ha sido considerado una de las jóvenes promesas del tenis mundial.</p>
+            </div>
+          </div>
+        </div>
+        <div id="detalle-jug" class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>

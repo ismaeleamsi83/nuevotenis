@@ -46,3 +46,59 @@ table tr:nth-child(odd){
 .seleccionado {
     cursor: pointer;
 }
+
+
+
+/*detalle del jugador*/
+
+
+.margenarriba {
+    margin-top: 2rem;
+}
+
+
+#detalle-jug {
+    background-color: #78D6C6;
+}
+
+#detallejugador {
+    background-color: #F4FFF8;
+}
+
+
+
+.foto-detalle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nombre-detalle {
+    font-size: large;
+}
+
+.nivel-detalle {
+    font-size: large;
+}
+
+.part {
+    display: flex;
+    flex-direction: column;
+    font-size: small;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.juga {
+    background-color: bisque;
+}
+
+.ganad {
+    background-color: rgb(143, 255, 162);
+}
+
+.perd {
+    background-color: rgb(255, 135, 135);
+}
